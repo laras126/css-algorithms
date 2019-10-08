@@ -9,8 +9,9 @@ describe( '.a-pull', () => {
 		return assertGreaterThan( pullItem.top.toFixed(), pullItemDirectParent.top.toFixed() );
 	});
 	
-	it( 'the above-item increases in height by the pull-size value', () => {
-		return assertEquals( pullItem.top.toFixed(), itemAbovePullItem.bottom.toFixed() );
-	});
+	// Incomplete
+	// it( 'the above-item increases in height by the pull-size value', () => {
+		// return assertEquals( pullItem.top.toFixed(), itemAbovePullItem.bottom.toFixed() );
+	// });
 
 });
