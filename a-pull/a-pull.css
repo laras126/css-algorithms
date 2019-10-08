@@ -1,0 +1,72 @@
+/* 
+The Pull algorithm "pulls" an element outside of the box 
+its containing element. It can be useful achieving a slight
+"bleed" of one element over (or under) it's containing element.
+
+What do you call this effect?
+*/
+
+
+/* {
+	box-sizing: border-box;
+}
+ */
+
+/* 
+Set the custom property on an element containing all 
+relevant pull elements.
+*/
+.a-pull { 
+	--a-pull-size: 3; 
+}
+
+/*
+Add this to the item that will be "pulled up"
+*/
+.a-pull-up-item {
+	margin-top: calc( var( --a-pull-size ) * -1rem );
+}
+
+/* 
+Add this to the element that is the next block level element
+above the item that will be "pulled up"
+*/
+.a-pull-up-above-item {
+	padding-bottom: calc( var( --a-pull-size ) * 1rem );
+}
+
+
+
+
+
+
+
+/* Not part of the algorithm */
+
+.c-box {
+	background-color: magenta;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.a-wrapper {
+	max-width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.u-text-align-center {
+	text-align: center;
+}
+
+.u-border-a-1 {
+	border: 3px solid skyblue;
+}
+
+.u-margin-tb-0 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
